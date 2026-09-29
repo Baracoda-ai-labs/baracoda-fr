@@ -1,0 +1,44 @@
+{
+ "nfd_e_acute": {
+  "input": "été",
+  "decoded_default": "été",
+  "decoded_keep_special": "été",
+  "identical_bytes_default": false,
+  "identical_to_NFC_keep_special": true
+ },
+ "nfc": {
+  "input": "été",
+  "decoded_default": "été",
+  "decoded_keep_special": "été",
+  "identical_bytes_default": true,
+  "identical_to_NFC_keep_special": true
+ },
+ "literal_special": {
+  "input": "avant <|im_start|> après",
+  "decoded_default": "avant  après",
+  "decoded_keep_special": "avant <|im_start|> après",
+  "identical_bytes_default": false,
+  "identical_to_NFC_keep_special": true
+ },
+ "nbsp": {
+  "input": "10 000 €",
+  "decoded_default": "10 000 €",
+  "decoded_keep_special": "10 000 €",
+  "identical_bytes_default": true,
+  "identical_to_NFC_keep_special": true
+ },
+ "typographic_apostrophe": {
+  "input": "l’homme",
+  "decoded_default": "l’homme",
+  "decoded_keep_special": "l’homme",
+  "identical_bytes_default": true,
+  "identical_to_NFC_keep_special": true
+ },
+ "emoji": {
+  "input": "🙂 ok",
+  "decoded_default": "🙂 ok",
+  "decoded_keep_special": "🙂 ok",
+  "identical_bytes_default": true,
+  "identical_to_NFC_keep_special": true
+ }
+}

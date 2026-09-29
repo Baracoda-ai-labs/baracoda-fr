@@ -1,0 +1,8 @@
+# Minimal pinned environment (Python 3.10+). A full lock of the original run is in requirements.lock.txt.
+tokenizers==0.23.2
+mistral_common==1.12.0
+tiktoken==0.14.0
+huggingface_hub==1.33.0
+datasets==5.0.1
+numpy==2.3.5
+pyahocorasick==2.3.1

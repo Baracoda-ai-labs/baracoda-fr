@@ -1,0 +1,44 @@
+{
+ "method": "Browser (transformers.js v3, official Hugging Face tekken.json/tokenizer.json files), 2026-09-29. Not independently reproduced; scripts/mistral_versions.py reproduces it in Python.",
+ "files": {
+  "mistralai/Mistral-Nemo-Instruct-2407": {
+   "version": "v3",
+   "sha256_prefix": "eccd1665d2e47769",
+   "num_vocab_tokens": 150000,
+   "default_vocab_size": 131072
+  },
+  "mistralai/Ministral-3-8B-Instruct-2512": {
+   "version": "v13",
+   "sha256_prefix": "600bb27946565481",
+   "counted": false
+  },
+  "mistralai/Mistral-Large-3-675B-Instruct-2512": {
+   "version": "v13",
+   "sha256_prefix": "e29d19ea32eb7e26",
+   "counted": true
+  },
+  "mistralai/Mistral-Medium-3.5-128B": {
+   "version": "v15",
+   "sha256_prefix": "b1272b956bd6edd2",
+   "counted": true
+  },
+  "mistralai/Mistral-Small-4-119B-2603": {
+   "version": "v15",
+   "sha256_prefix": "b1272b956bd6edd2",
+   "counted": false,
+   "note": "same file as Medium 3.5"
+  }
+ },
+ "totals_identical_for_counted_files": {
+  "ntrex_en": 53975,
+  "ntrex_fr": 70724,
+  "pud_en": 23868,
+  "pud_fr": 29707,
+  "fin_fr_partut": 33248,
+  "fin_fr_paris": 47824,
+  "fin_fr_fqb": 28283,
+  "fin_en_partut": 54670,
+  "fin_en_lines": 115331,
+  "fin_en_gentle": 21164
+ }
+}

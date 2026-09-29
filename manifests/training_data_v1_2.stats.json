@@ -1,0 +1,67 @@
+{
+ "en_web.stats.json": {
+  "source": "en_web",
+  "cible_mo": 300,
+  "octets_conserves": 300003388,
+  "docs_lus": 97027,
+  "docs_conserves": 97013,
+  "docs_vides_ignores": 0,
+  "docs_ecartes_decontamination": 14,
+  "octets_ecartes": 273473,
+  "cible_atteinte": true,
+  "phrases_test_gt40": 9096,
+  "secondes": 91
+ },
+ "europarl_en.stats.json": {
+  "source": "europarl_en",
+  "cible_mo": 50,
+  "octets_conserves": 50000026,
+  "docs_lus": 331198,
+  "docs_conserves": 330953,
+  "docs_vides_ignores": 245,
+  "docs_ecartes_decontamination": 0,
+  "octets_ecartes": 0,
+  "cible_atteinte": true,
+  "phrases_test_gt40": 9096,
+  "secondes": 60
+ },
+ "europarl_fr.stats.json": {
+  "source": "europarl_fr",
+  "cible_mo": 50,
+  "octets_conserves": 50000159,
+  "docs_lus": 290972,
+  "docs_conserves": 290292,
+  "docs_vides_ignores": 636,
+  "docs_ecartes_decontamination": 44,
+  "octets_ecartes": 6667,
+  "cible_atteinte": true,
+  "phrases_test_gt40": 9096,
+  "secondes": 50
+ },
+ "fr_web.stats.json": {
+  "source": "fr_web",
+  "cible_mo": 300,
+  "octets_conserves": 300060457,
+  "docs_lus": 74906,
+  "docs_conserves": 74878,
+  "docs_vides_ignores": 0,
+  "docs_ecartes_decontamination": 28,
+  "octets_ecartes": 1282483,
+  "cible_atteinte": true,
+  "phrases_test_gt40": 9096,
+  "secondes": 50
+ },
+ "python.stats.json": {
+  "source": "python",
+  "cible_mo": 60,
+  "octets_conserves": 36007105,
+  "docs_lus": 1852,
+  "docs_conserves": 1826,
+  "docs_vides_ignores": 24,
+  "docs_ecartes_decontamination": 2,
+  "octets_ecartes": 28536,
+  "cible_atteinte": false,
+  "phrases_test_gt40": 9096,
+  "secondes": 2
+ }
+}

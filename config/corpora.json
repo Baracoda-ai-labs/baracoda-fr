@@ -1,0 +1,166 @@
+{
+ "NTREX-128 en": {
+  "repo": "MicrosoftTranslator/NTREX",
+  "commit": "468c6b69c7f6a75d31d4743d9daba2af566cc18d",
+  "files": [
+   "NTREX-128/newstest2019-src.eng.txt"
+  ],
+  "format": "lines",
+  "lang": "en",
+  "role": "dev",
+  "pair": "NTREX-128",
+  "groups": "DOCUMENT_IDS.tsv"
+ },
+ "NTREX-128 fr": {
+  "repo": "MicrosoftTranslator/NTREX",
+  "commit": "468c6b69c7f6a75d31d4743d9daba2af566cc18d",
+  "files": [
+   "NTREX-128/newstest2019-ref.fra.txt"
+  ],
+  "format": "lines",
+  "lang": "fr",
+  "role": "dev",
+  "pair": "NTREX-128",
+  "groups": "DOCUMENT_IDS.tsv"
+ },
+ "UD French-PUD": {
+  "repo": "UniversalDependencies/UD_French-PUD",
+  "commit": "db260db10fe728853c549760801229ef4e7b16e1",
+  "files": [
+   "fr_pud-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "fr",
+  "role": "dev",
+  "pair": "UD PUD"
+ },
+ "UD English-PUD": {
+  "repo": "UniversalDependencies/UD_English-PUD",
+  "commit": "f16eba4ae7f3d161870ed320676c5088b8fa476c",
+  "files": [
+   "en_pud-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "en",
+  "role": "dev",
+  "pair": "UD PUD"
+ },
+ "UD French-GSD": {
+  "repo": "UniversalDependencies/UD_French-GSD",
+  "commit": "94d5b68e185fc22a9ef292040e84f476d36d9b0e",
+  "files": [
+   "fr_gsd-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "fr",
+  "role": "dev"
+ },
+ "UD French-Sequoia": {
+  "repo": "UniversalDependencies/UD_French-Sequoia",
+  "commit": "21e377f98e07109500618ea83f1deccd77670d8f",
+  "files": [
+   "fr_sequoia-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "fr",
+  "role": "dev"
+ },
+ "UD French-Rhapsodie": {
+  "repo": "UniversalDependencies/UD_French-Rhapsodie",
+  "commit": "6979888f619d58edbb8a2de5352c5297b0eff902",
+  "files": [
+   "fr_rhapsodie-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "fr",
+  "role": "dev"
+ },
+ "UD English-EWT": {
+  "repo": "UniversalDependencies/UD_English-EWT",
+  "commit": "4a4d77f599ea53cc405f85d0cec4b2f14f81d42b",
+  "files": [
+   "en_ewt-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "en",
+  "role": "dev"
+ },
+ "UD English-GUM": {
+  "repo": "UniversalDependencies/UD_English-GUM",
+  "commit": "1fe635509c649e376dfb449d528424ab78f4eaee",
+  "files": [
+   "en_gum-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "en",
+  "role": "dev"
+ },
+ "fr ParTUT": {
+  "repo": "UniversalDependencies/UD_French-ParTUT",
+  "commit": "4d0c8351842f93be11b50fd08ea7b2b4b9101c01",
+  "files": [
+   "fr_partut-ud-dev.conllu",
+   "fr_partut-ud-test.conllu",
+   "fr_partut-ud-train.conllu"
+  ],
+  "format": "conllu",
+  "lang": "fr",
+  "role": "final"
+ },
+ "fr ParisStories": {
+  "repo": "UniversalDependencies/UD_French-ParisStories",
+  "commit": "dec76f7a1731318b033c578d534410b0a3d4ea5c",
+  "files": [
+   "fr_parisstories-ud-dev.conllu",
+   "fr_parisstories-ud-test.conllu",
+   "fr_parisstories-ud-train.conllu"
+  ],
+  "format": "conllu",
+  "lang": "fr",
+  "role": "final"
+ },
+ "fr FQB": {
+  "repo": "UniversalDependencies/UD_French-FQB",
+  "commit": "03cbf5de52bc75bf0f7e6fac7d9f21568b073b07",
+  "files": [
+   "fr_fqb-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "fr",
+  "role": "final"
+ },
+ "en ParTUT": {
+  "repo": "UniversalDependencies/UD_English-ParTUT",
+  "commit": "5552572ac2c5aac1538e43edb7f7a8d2224f12de",
+  "files": [
+   "en_partut-ud-dev.conllu",
+   "en_partut-ud-test.conllu",
+   "en_partut-ud-train.conllu"
+  ],
+  "format": "conllu",
+  "lang": "en",
+  "role": "final"
+ },
+ "en LinES": {
+  "repo": "UniversalDependencies/UD_English-LinES",
+  "commit": "f1e4f1d6d6dd03ee4e5176d6b6a13f694c7efab0",
+  "files": [
+   "en_lines-ud-dev.conllu",
+   "en_lines-ud-test.conllu",
+   "en_lines-ud-train.conllu"
+  ],
+  "format": "conllu",
+  "lang": "en",
+  "role": "final"
+ },
+ "en GENTLE": {
+  "repo": "UniversalDependencies/UD_English-GENTLE",
+  "commit": "fd7a1bfc82896e362c66f59492b5525940f52fa7",
+  "files": [
+   "en_gentle-ud-test.conllu"
+  ],
+  "format": "conllu",
+  "lang": "en",
+  "role": "final"
+ }
+}

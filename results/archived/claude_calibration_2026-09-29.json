@@ -1,0 +1,56 @@
+{
+ "model": "claude-opus-5-5",
+ "date": "2026-09-29",
+ "overhead": 7,
+ "method": "count(x), count(xx), count(xxx); overhead = 2*c1 - c2 = (3*c1 - c3)/2",
+ "probes": [
+  {
+   "text": "Bonjour.\n",
+   "c1": 14,
+   "c2": 21,
+   "c3": 28
+  },
+  {
+   "text": "The cat sat on the mat.\n",
+   "c1": 18,
+   "c2": 29,
+   "c3": 40
+  },
+  {
+   "text": "Le chat est sur le tapis.\n",
+   "c1": 20,
+   "c2": 33,
+   "c3": 46
+  },
+  {
+   "text": "1234\n",
+   "c1": 10,
+   "c2": 13,
+   "c3": 16
+  },
+  {
+   "text": "Hello world\n",
+   "c1": 12,
+   "c2": 17,
+   "c3": 22
+  },
+  {
+   "text": "a\n",
+   "c1": 9,
+   "c2": 11,
+   "c3": 13
+  },
+  {
+   "text": "Tous les êtres humains naissent libres.\n",
+   "c1": 23,
+   "c2": 39,
+   "c3": 55
+  }
+ ],
+ "also": {
+  "a": 9,
+  "aa": 10,
+  "a a": 10
+ },
+ "note": "Recorded from the probe run on 2026-09-29; raw HTTP responses were not stored in that run. scripts/claude_counts.py stores them."
+}

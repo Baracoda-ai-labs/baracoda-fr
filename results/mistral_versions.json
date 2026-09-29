@@ -1,0 +1,114 @@
+{
+ "mistralai/Mistral-Nemo-Instruct-2407": {
+  "sha256": "eccd1665d2e477697c33cb7f0daa6f6dfefc57a0a6bceb66d4be52952f827516",
+  "version": "v3",
+  "totals": {
+   "NTREX-128 en": 53975,
+   "NTREX-128 fr": 70724,
+   "UD French-PUD": 29707,
+   "UD English-PUD": 23868,
+   "UD French-GSD": 12226,
+   "UD French-Sequoia": 12824,
+   "UD French-Rhapsodie": 13956,
+   "UD English-EWT": 31178,
+   "UD English-GUM": 31511,
+   "fr ParTUT": 33248,
+   "fr ParisStories": 47824,
+   "fr FQB": 28283,
+   "en ParTUT": 54670,
+   "en LinES": 115331,
+   "en GENTLE": 21164
+  }
+ },
+ "mistralai/Ministral-3-8B-Instruct-2512": {
+  "sha256": "600bb27946565481ecf51ba8aee252e49b9a68507866080ac9c30185bb312843",
+  "version": "v13",
+  "totals": {
+   "NTREX-128 en": 53975,
+   "NTREX-128 fr": 70724,
+   "UD French-PUD": 29707,
+   "UD English-PUD": 23868,
+   "UD French-GSD": 12226,
+   "UD French-Sequoia": 12824,
+   "UD French-Rhapsodie": 13956,
+   "UD English-EWT": 31178,
+   "UD English-GUM": 31511,
+   "fr ParTUT": 33248,
+   "fr ParisStories": 47824,
+   "fr FQB": 28283,
+   "en ParTUT": 54670,
+   "en LinES": 115331,
+   "en GENTLE": 21164
+  }
+ },
+ "mistralai/Mistral-Large-3-675B-Instruct-2512": {
+  "sha256": "e29d19ea32eb7e26e6c0572d57cb7f9eca0f4420e0e0fe6ae1cf3be94da1c0d6",
+  "version": "v13",
+  "totals": {
+   "NTREX-128 en": 53975,
+   "NTREX-128 fr": 70724,
+   "UD French-PUD": 29707,
+   "UD English-PUD": 23868,
+   "UD French-GSD": 12226,
+   "UD French-Sequoia": 12824,
+   "UD French-Rhapsodie": 13956,
+   "UD English-EWT": 31178,
+   "UD English-GUM": 31511,
+   "fr ParTUT": 33248,
+   "fr ParisStories": 47824,
+   "fr FQB": 28283,
+   "en ParTUT": 54670,
+   "en LinES": 115331,
+   "en GENTLE": 21164
+  }
+ },
+ "mistralai/Mistral-Medium-3.5-128B": {
+  "sha256": "b1272b956bd6edd2d2c674c76896c7661308c9e723997b0afb55ecb429cb5dc7",
+  "version": "v15",
+  "totals": {
+   "NTREX-128 en": 53975,
+   "NTREX-128 fr": 70724,
+   "UD French-PUD": 29707,
+   "UD English-PUD": 23868,
+   "UD French-GSD": 12226,
+   "UD French-Sequoia": 12824,
+   "UD French-Rhapsodie": 13956,
+   "UD English-EWT": 31178,
+   "UD English-GUM": 31511,
+   "fr ParTUT": 33248,
+   "fr ParisStories": 47824,
+   "fr FQB": 28283,
+   "en ParTUT": 54670,
+   "en LinES": 115331,
+   "en GENTLE": 21164
+  }
+ },
+ "mistralai/Mistral-Small-4-119B-2603": {
+  "sha256": "b1272b956bd6edd2d2c674c76896c7661308c9e723997b0afb55ecb429cb5dc7",
+  "version": "v15",
+  "totals": {
+   "NTREX-128 en": 53975,
+   "NTREX-128 fr": 70724,
+   "UD French-PUD": 29707,
+   "UD English-PUD": 23868,
+   "UD French-GSD": 12226,
+   "UD French-Sequoia": 12824,
+   "UD French-Rhapsodie": 13956,
+   "UD English-EWT": 31178,
+   "UD English-GUM": 31511,
+   "fr ParTUT": 33248,
+   "fr ParisStories": 47824,
+   "fr FQB": 28283,
+   "en ParTUT": 54670,
+   "en LinES": 115331,
+   "en GENTLE": 21164
+  }
+ },
+ "identical_to_nemo": {
+  "mistralai/Mistral-Nemo-Instruct-2407": true,
+  "mistralai/Ministral-3-8B-Instruct-2512": true,
+  "mistralai/Mistral-Large-3-675B-Instruct-2512": true,
+  "mistralai/Mistral-Medium-3.5-128B": true,
+  "mistralai/Mistral-Small-4-119B-2603": true
+ }
+}

@@ -1,0 +1,167 @@
+[
+ {
+  "seed": 1,
+  "share_target": 0,
+  "bytes_fr": 0,
+  "bytes_en": 47999996,
+  "share_actual": 0.0,
+  "vocab_effective": 50000,
+  "pud_fr": 44306,
+  "pud_en": 24427,
+  "premium": 1.8138125844352562
+ },
+ {
+  "seed": 1,
+  "share_target": 0.25,
+  "bytes_fr": 11999900,
+  "bytes_en": 35999936,
+  "share_actual": 0.24999877082913366,
+  "vocab_effective": 50000,
+  "pud_fr": 29317,
+  "pud_en": 25129,
+  "premium": 1.1666600342234072
+ },
+ {
+  "seed": 1,
+  "share_target": 0.5,
+  "bytes_fr": 23999771,
+  "bytes_en": 23999957,
+  "share_actual": 0.4999980624890208,
+  "vocab_effective": 50000,
+  "pud_fr": 28897,
+  "pud_en": 25548,
+  "premium": 1.1310865821199312
+ },
+ {
+  "seed": 1,
+  "share_target": 0.75,
+  "bytes_fr": 35999813,
+  "bytes_en": 11999973,
+  "share_actual": 0.7499994479142053,
+  "vocab_effective": 50000,
+  "pud_fr": 28655,
+  "pud_en": 26122,
+  "premium": 1.0969680728887528
+ },
+ {
+  "seed": 1,
+  "share_target": 1.0,
+  "bytes_fr": 47999886,
+  "bytes_en": 0,
+  "share_actual": 1.0,
+  "vocab_effective": 50000,
+  "pud_fr": 28249,
+  "pud_en": 38043,
+  "premium": 0.7425544778277212
+ },
+ {
+  "seed": 2,
+  "share_target": 0,
+  "bytes_fr": 0,
+  "bytes_en": 47999920,
+  "share_actual": 0.0,
+  "vocab_effective": 50000,
+  "pud_fr": 44657,
+  "pud_en": 24406,
+  "premium": 1.8297549782840286
+ },
+ {
+  "seed": 2,
+  "share_target": 0.25,
+  "bytes_fr": 11999955,
+  "bytes_en": 35999908,
+  "share_actual": 0.24999977604102744,
+  "vocab_effective": 50000,
+  "pud_fr": 29371,
+  "pud_en": 25160,
+  "premium": 1.167368839427663
+ },
+ {
+  "seed": 2,
+  "share_target": 0.5,
+  "bytes_fr": 23999892,
+  "bytes_en": 23999945,
+  "share_actual": 0.4999994479147919,
+  "vocab_effective": 50000,
+  "pud_fr": 28879,
+  "pud_en": 25513,
+  "premium": 1.1319327401716772
+ },
+ {
+  "seed": 2,
+  "share_target": 0.75,
+  "bytes_fr": 35999860,
+  "bytes_en": 11999906,
+  "share_actual": 0.7500007395869388,
+  "vocab_effective": 50000,
+  "pud_fr": 28660,
+  "pud_en": 26094,
+  "premium": 1.0983367824020849
+ },
+ {
+  "seed": 2,
+  "share_target": 1.0,
+  "bytes_fr": 47999809,
+  "bytes_en": 0,
+  "share_actual": 1.0,
+  "vocab_effective": 50000,
+  "pud_fr": 28284,
+  "pud_en": 38068,
+  "premium": 0.7429862351581381
+ },
+ {
+  "seed": 3,
+  "share_target": 0,
+  "bytes_fr": 0,
+  "bytes_en": 47999996,
+  "share_actual": 0.0,
+  "vocab_effective": 50000,
+  "pud_fr": 44489,
+  "pud_en": 24372,
+  "premium": 1.825414409978664
+ },
+ {
+  "seed": 3,
+  "share_target": 0.25,
+  "bytes_fr": 11999906,
+  "bytes_en": 35999977,
+  "share_actual": 0.24999865103837857,
+  "vocab_effective": 50000,
+  "pud_fr": 29344,
+  "pud_en": 25143,
+  "premium": 1.167084277930239
+ },
+ {
+  "seed": 3,
+  "share_target": 0.5,
+  "bytes_fr": 23999902,
+  "bytes_en": 23999924,
+  "share_actual": 0.4999997708325026,
+  "vocab_effective": 50000,
+  "pud_fr": 28899,
+  "pud_en": 25505,
+  "premium": 1.1330719466771222
+ },
+ {
+  "seed": 3,
+  "share_target": 0.75,
+  "bytes_fr": 35999844,
+  "bytes_en": 11999968,
+  "share_actual": 0.749999687498776,
+  "vocab_effective": 50000,
+  "pud_fr": 28654,
+  "pud_en": 26080,
+  "premium": 1.098696319018405
+ },
+ {
+  "seed": 3,
+  "share_target": 1.0,
+  "bytes_fr": 47999942,
+  "bytes_en": 0,
+  "share_actual": 1.0,
+  "vocab_effective": 50000,
+  "pud_fr": 28253,
+  "pud_en": 37846,
+  "premium": 0.7465253923796438
+ }
+]

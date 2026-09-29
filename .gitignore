@@ -1,0 +1,9 @@
+.venv/
+.venv-audit/
+__pycache__/
+*.pyc
+data
+data/
+corpora/
+logs/
+.DS_Store
