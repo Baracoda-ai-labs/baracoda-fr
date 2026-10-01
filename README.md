@@ -2,6 +2,8 @@
 
 **Baracoda AI Labs · 29 September 2026 · research prototype · code and tokenizer: Apache 2.0 · results and documentation: CC BY 4.0**
 
+Paper: T. Serval, The Invisible Language Tax: Token Premiums of French and Regional Languages in 2026 LLM Tokenizers, and a French-Optimized Prototype, Baracoda AI Labs, 2026. [arXiv:2609.39001](https://arxiv.org/abs/2609.39001)
+
 Baracoda FR v1.2 is a byte-level BPE tokenizer with 131,072 entries (131,068 ordinary tokens + 4 special tokens), trained on 736 MB of French and English web text, Europarl and Python code. This repository contains the tokenizer, the evaluation corpora definitions (pinned commits), every script, and the results of the study *The Invisible Language Tax* (Baracoda AI Labs, 2026).
 
 ## Headline result (segmentation only)
@@ -97,3 +99,18 @@ Suggested attribution: *Baracoda AI Labs (2026), The Invisible Language Tax: tok
 Third-party material is **not** included and keeps its own licence: training data (FineWeb, FineWeb-2, Europarl, Python standard library), evaluation corpora (NTREX-128, Universal Dependencies treebanks, some of which are non-commercial), the Mistral Tekken and CroissantLLM tokenizer files. The scripts download them from their sources at pinned versions; only derived counts, digests and statistics are distributed here.
 
 The Apache licence does not grant permission to use the Baracoda names or logos (section 6). This repository is provided "as is", without warranty.
+
+## Citation
+
+```bibtex
+@misc{serval2026languagetax,
+  title         = {The Invisible Language Tax: Token Premiums of French and Regional Languages in 2026 LLM Tokenizers, and a French-Optimized Prototype},
+  author        = {Serval, Thomas},
+  year          = {2026},
+  eprint        = {2609.39001},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2609.39001},
+  note          = {Baracoda AI Labs. Code and data: https://github.com/Baracoda-ai-labs/baracoda-fr}
+}
+```
