@@ -94,7 +94,7 @@ v1: Europarl + code. v1.1: same data, elisions and digit grouping. v1.2: web dat
 | Code (`scripts/`, `run.py`) and tokenizer files (`tokenizers/`) | Apache License 2.0 (`LICENSE`, `NOTICE`) |
 | Results, protocol, manifests and documentation (`results/`, `protocol/`, `manifests/`, `config/`, this README) | Creative Commons Attribution 4.0 International (`LICENSE-CC-BY-4.0.txt`) |
 
-Suggested attribution: *Baracoda AI Labs (2026), The Invisible Language Tax: token premiums of French and regional languages on 2026 tokenizers, and Baracoda FR v1.2.*
+Suggested attribution: *T. Serval, The Invisible Language Tax: Token Premiums of French and Regional Languages in 2026 LLM Tokenizers, and a French-Optimized Prototype, Baracoda AI Labs, 2026, arXiv:2609.39001.*
 
 Third-party material is **not** included and keeps its own licence: training data (FineWeb, FineWeb-2, Europarl, Python standard library), evaluation corpora (NTREX-128, Universal Dependencies treebanks, some of which are non-commercial), the Mistral Tekken and CroissantLLM tokenizer files. The scripts download them from their sources at pinned versions; only derived counts, digests and statistics are distributed here.
 
