@@ -1,0 +1,76 @@
+# Étape 2 — Qwen3-0.6B-Base, bras A / B / C / C′ (feu vert de Thomas, 7 octobre 2026).
+# Recette R1 PRÉDÉCLARÉE avant tout entraînement ; choix sur validation uniquement, test réservé.
+run_dir: runs/QWEN06B
+hf_cache: hf_cache
+seed: 20261007
+
+base_model:
+  repo: Qwen/Qwen3-0.6B-Base
+  revision: da87bfb608c14b7cf20ba1ce41287e8de496c0cd
+
+arms:
+  # A : checkpoint d'origine, aucune continuation (évalué seulement).
+  B:        # tokenizer d'origine, continuation sur notre corpus
+    tokenizer: original
+  C:        # Baracoda v2 CORRIGÉ (alphabet 256 octets), transfert du vocabulaire puis continuation
+    tokenizer:
+      path: ${BARACODA_ROOT}/v2/candidates_bytes/baracoda-fr-v2-t100k-bytes.json
+      sha256: 89ff40ffc78060fc9928cdc141b52337b8f7799775ea8e986c541fe1a4c29f95
+    embed_phase: true
+  Cprime:   # C′ : Baracoda v1.2 publié, même procédure que C
+    tokenizer:
+      path: ${BARACODA_ROOT}/pack/tokenizers/baracoda-fr-v1_2.json
+      sha256: 8d9fdb7b10f2ab278259e6a08b7601e8405db9f256894518723982cff924464d
+    embed_phase: true
+
+  # ---- Étape 3 (8 oct.) : même recette R1, seule l'initialisation des embeddings change (TokAlign) ----
+  C_TA:     # v2-t100k-bytes, initialisation TokAlign
+    tokenizer:
+      path: ${BARACODA_ROOT}/v2/candidates_bytes/baracoda-fr-v2-t100k-bytes.json
+      sha256: 89ff40ffc78060fc9928cdc141b52337b8f7799775ea8e986c541fe1a4c29f95
+    tokenizer_name: v2bytes
+    init: tokalign
+    embed_phase: true
+  Cprime_TA:  # v1.2, initialisation TokAlign
+    tokenizer:
+      path: ${BARACODA_ROOT}/pack/tokenizers/baracoda-fr-v1_2.json
+      sha256: 8d9fdb7b10f2ab278259e6a08b7601e8405db9f256894518723982cff924464d
+    tokenizer_name: v1_2
+    init: tokalign
+    embed_phase: true
+  C_FOCUS:  # v2-t100k-bytes, initialisation FOCUS (comparaison)
+    tokenizer:
+      path: ${BARACODA_ROOT}/v2/candidates_bytes/baracoda-fr-v2-t100k-bytes.json
+      sha256: 89ff40ffc78060fc9928cdc141b52337b8f7799775ea8e986c541fe1a4c29f95
+    tokenizer_name: v2bytes
+    init: focus
+    embed_phase: true
+
+# Corpus d'alignement TokAlign (public, hors val/test) : voir data/align/manifest.json
+tokalign:
+  corpus:
+    - data/align/fr.txt
+    - data/align/en.txt
+corpus:
+  docs_dir: data/docs
+  manifest: manifests/documents.csv
+
+train:                      # recette R1
+  epochs: 1                 # une passe sur le split train (mêmes documents, même ordre pour B, C, C′)
+  seq_len: 512
+  micro_batch: 2             # calibration du 7 oct. : 2×8 plus rapide que 4×4 (même 16 séquences par pas)
+  grad_accum: 8
+  lr: 3.0e-5                # dégel complet
+  warmup_steps: 30
+  weight_decay: 0.1
+  embed_phase_bytes: 1000000  # C, C′ : les ~1 Mo de texte initiaux n'entraînent que les embeddings (partagés)
+  embed_lr: 1.0e-3
+  paliers: 2                # 7 oct. 23 h 20 : 4 -> 2 (consigne de Thomas, estimation 21,3 h > 12 h) ; recette inchangée
+  autocast_bf16: true
+  gradient_checkpointing: true
+  max_hours: null
+
+eval:
+  split: val
+  max_passage_bytes: 2000
+  batch_tokens: 2048

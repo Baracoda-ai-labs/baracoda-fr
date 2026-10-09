@@ -1,0 +1,19 @@
+{
+ "arm": "C",
+ "tokenizer": "baracoda-fr-v2-t100k-bytes.json (not yet released)",
+ "tokenizer_sha256": "89ff40ffc78060fc9928cdc141b52337b8f7799775ea8e986c541fe1a4c29f95",
+ "base": {
+  "repo": "Qwen/Qwen3-0.6B-Base",
+  "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd"
+ },
+ "old_rows": 151936,
+ "new_rows": 131073,
+ "tied": true,
+ "eos_id": 131072,
+ "exact": 51181,
+ "decomposed": 79891,
+ "special": 1,
+ "decomposition_pieces_mean": 2.4519032181347087,
+ "decomposition_pieces_max": 16,
+ "method": "copie exacte + moyenne de la d\u00e9composition (baseline, pas TokAlign)"
+}
