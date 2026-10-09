@@ -111,3 +111,20 @@ Because the compact tokenizers cut the same text into fewer tokens, they receive
 | C | 2,607,440 | 410 | 38 |
 
 **Limits:** one small model, one pass, one run, a simple initialisation, no downstream tasks, and no frequency-weighted share of new tokens. The training code (`eval-metier`) is not released yet. `eval_val.json` holds all arms and checkpoints, by domain, with intervals.
+
+## Paired comparisons and reproduction checks (added 9 October 2026)
+
+`results/eu24/paired/` contains the per-sentence counts recomputed for the 8 local tokenizers and for Claude, from the stored counts. All totals are identical to the published JSON (`recount_check.json`). The folder also holds paired bootstrap intervals over documents (10,000 draws, seed 0: `paired_ntrex.json`, `paired_flores.json`, summary in `PAIRED.md`) and the UDHR reproduction check (`udhr_check.json`: identical counts).
+
+- On NTREX, the observed order of the 8 local tokenizers by total tokens is preserved in 100% of draws. By mean ratio it is preserved in 97.8% of draws; the least certain pair is OpenAI against Gemma.
+- On FLORES+, both orders are preserved in 100% of draws.
+- Salamandra needs 16.9% fewer tokens than OpenAI o200k over the 23 languages, with a 95% CI of [16.4, 17.4].
+
+Scripts: `scripts/eu24/recount.py`, `paired.py`, `udhr.py` and `transplant_new_token_share.py`. They were run from a working folder next to `eu24/`; adjust the `ICI`/`EU24` paths at the top of each script.
+
+Transplant test, weighted share of new tokens (`results/transplant_qwen3_0.6b/new_token_share.json`): the share of token occurrences with no exact counterpart in Qwen3's vocabulary is
+
+| | All validation texts | Professional texts |
+|---|---:|---:|
+| v1.2 | 22.7% | 29.6% |
+| v2 | 34.4% | 57.5% |

@@ -1,0 +1,64 @@
+{
+ "split": "val",
+ "passages": 1836,
+ "bytes": 2761526,
+ "rule": "exact = même chaîne dans le vocabulaire du modèle Qwen3 (hors tokens ajoutés) ; sinon décomposé",
+ "tokenizers": {
+  "Baracoda FR v1.2": {
+   "sha256": "8d9fdb7b10f2ab278259e6a08b7601e8405db9f256894518723982cff924464d",
+   "vocabulary": {
+    "new": 74750,
+    "exact": 56318,
+    "special": 4,
+    "size": 131072,
+    "new_share_of_types": 0.5703146458326975
+   },
+   "all": {
+    "passages": 1836,
+    "bytes": 2761526,
+    "occurrences": 799254,
+    "exact": 618103,
+    "new": 181151,
+    "special": 0,
+    "new_share_weighted": 0.22665010121938708
+   },
+   "metier": {
+    "passages": 888,
+    "bytes": 1216426,
+    "occurrences": 250493,
+    "exact": 176251,
+    "new": 74242,
+    "special": 0,
+    "new_share_weighted": 0.2963835316755358
+   }
+  },
+  "Baracoda FR v2-t100k-bytes": {
+   "sha256": "89ff40ffc78060fc9928cdc141b52337b8f7799775ea8e986c541fe1a4c29f95",
+   "vocabulary": {
+    "exact": 51181,
+    "new": 79891,
+    "special": 1,
+    "size": 131073,
+    "new_share_of_types": 0.6095199584960938
+   },
+   "all": {
+    "passages": 1836,
+    "bytes": 2761526,
+    "occurrences": 703484,
+    "exact": 461537,
+    "new": 241947,
+    "special": 0,
+    "new_share_weighted": 0.34392679861944264
+   },
+   "metier": {
+    "passages": 888,
+    "bytes": 1216426,
+    "occurrences": 186724,
+    "exact": 79278,
+    "new": 107446,
+    "special": 0,
+    "new_share_weighted": 0.5754268331869498
+   }
+  }
+ }
+}

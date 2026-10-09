@@ -1,0 +1,48 @@
+{
+ "BSC Salamandra": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "EuroLLM": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "OpenAI o200k": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "Google Gemma 3": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "Mistral Tekken": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "DeepSeek V3": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "Meta Llama 3": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "Alibaba Qwen3": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "Baracoda FR v1.2": {
+  "counts_identical": true,
+  "diff": {},
+  "mean_max_total_identical": true
+ },
+ "_all_identical": true
+}

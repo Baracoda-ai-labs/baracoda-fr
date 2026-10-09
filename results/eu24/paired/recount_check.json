@@ -1,0 +1,101 @@
+{
+ "ntrex": {
+  "OpenAI o200k": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1873043
+  },
+  "Meta Llama 3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 2215551
+  },
+  "Alibaba Qwen3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 2415479
+  },
+  "DeepSeek V3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 2193453
+  },
+  "Google Gemma 3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1922837
+  },
+  "Mistral Tekken": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1992630
+  },
+  "Baracoda FR v1.2": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 2631876
+  },
+  "Salamandra-7B": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1556121
+  },
+  "EuroLLM-9B": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1760957
+  },
+  "Anthropic Claude": {
+   "identical": true,
+   "source": "eu24_claude_counts.json (aucun nouvel appel)",
+   "total_eu": 3075686
+  }
+ },
+ "flores": {
+  "BSC Salamandra": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 796512
+  },
+  "EuroLLM": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 896868
+  },
+  "OpenAI o200k": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 970010
+  },
+  "Google Gemma 3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 992995
+  },
+  "Mistral Tekken": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1031280
+  },
+  "DeepSeek V3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1138273
+  },
+  "Meta Llama 3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1158155
+  },
+  "Alibaba Qwen3": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1266095
+  },
+  "Baracoda FR v1.2": {
+   "identical": true,
+   "diff": {},
+   "total_eu": 1381298
+  }
+ }
+}
