@@ -52,6 +52,10 @@ Europarl v7 fr-en, 48,000,000 bytes, BPE with Qwen3's pre-tokenizer, UD PUD Fren
 
 A modest share of French captures most of the gain; beyond it, French improves little while English degrades. This is a descriptive result on parliamentary text at one data size.
 
+## October 2026 follow-up: the 23 official EU languages
+
+Token premiums of the 23 non-English official EU languages on nine tokenizers (NTREX-128, checked on FLORES+ and the UDHR), and a test of transplanting Baracoda FR onto an existing model: [`results/eu24/README.md`](results/eu24/README.md).
+
 ## Repository layout
 
 ```
@@ -64,6 +68,9 @@ manifests/                   SHA-256 of tokenizers, corpora downloads and v1.2 t
 results/                     TABLES.md (generated), counts.json, contamination.json, ablations, controls;
                              archived/ = earlier or browser-based results kept for traceability
                              (archived/ablation*.json are the superseded character-based runs)
+results/eu24/                October 2026 follow-up: token premiums of the 23 non-English official EU
+                             languages on 9 tokenizers (README.md there); scripts in scripts/eu24/
+results/transplant_qwen3_0.6b/  Baracoda FR transplanted onto Qwen3-0.6B-Base (see results/eu24/README.md)
 ```
 
 ## Reproduce
