@@ -1,0 +1,35 @@
+name: mesure-openllm
+# OpenLLM-France tokenizers (Lucie, Luciole) and CroissantLLM vs references on NTREX-128.
+# Runs only on the mesure-openllm branch; writes aggregate results to results/openllm/.
+on:
+  push:
+    branches: [mesure-openllm]
+    paths: ["scripts/openllm/**", ".github/workflows/mesure-openllm.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install "transformers>=4.46" tokenizers tiktoken numpy huggingface_hub sentencepiece protobuf
+      - name: Measure
+        env:
+          OUT_DIR: ${{ github.workspace }}/results/openllm
+          HF_CACHE: ${{ runner.temp }}/hf
+        run: python -u scripts/openllm/openllm_fr.py 2>&1 | grep -vE "Warning|warn\(" | tee openllm_run.log
+      - name: Save results to the branch
+        if: always()
+        run: |
+          mkdir -p results/openllm && cp openllm_run.log results/openllm/run.log
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add results/openllm
+          git commit -m "OpenLLM-France tokenizer measurement: results" || echo "nothing to commit"
+          git push
