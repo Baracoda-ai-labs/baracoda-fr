@@ -1,0 +1,15 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+04:14:50 [0 min] IGNORÉ EuroLLM OSError('You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/utter-project/ | GatedRepoError('401 Client Error. (Request ID: Root=1-6ad0533a-6a329eb3707e7bc7390bfa4d;ef323823-8c77-452b-b1f1-a898dbe6
+04:14:50 [0 min] IGNORÉ Google Gemma 3 OSError('You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/google/gemma-3 | GatedRepoError('401 Client Error. (Request ID: Root=1-6ad0533a-0141cf9a78271e5235832c1b;849f62b7-08c9-4d30-b6bb-a3963251
+04:14:50 [0 min] IGNORÉ Meta Llama 3.1 OSError('You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Lla | GatedRepoError('401 Client Error. (Request ID: Root=1-6ad0533a-7b457a10316634bc7b746155;e67f1ff9-3b05-4021-86fc-81a82df4
+04:14:51 [0 min] IGNORÉ Baracoda EU V4 parity 256k fichier absent /home/runner/work/baracoda-fr/baracoda-fr/scripts/openllm/out_sweep/baracoda-eu-v4-parity-256k.json
+04:14:51 [0 min] IGNORÉ Baracoda EU V4 conventional 256k fichier absent /home/runner/work/baracoda-fr/baracoda-fr/scripts/openllm/out_sweep/baracoda-eu-v4-classical-256k.json
+04:14:51 [0 min] tokenizers : OpenLLM Lucie-7B, OpenLLM Luciole-1B, CroissantLLM, Mistral Tekken, BSC Salamandra, OpenAI o200k, Baracoda FR v1.2 (French only) | doublons : {'OpenLLM Luciole-8B': 'OpenLLM Luciole-1B', 'OpenLLM Luciole-23B': 'OpenLLM Luciole-1B'}
+04:14:53 [0 min] OpenLLM Lucie-7B                   vocab  65,024 | fr 1.249 | zh 3.952 | mean23 1.921 | worst ell 3.75 | gini 0.152
+04:14:56 [0 min] OpenLLM Luciole-1B                 vocab 128,000 | fr 1.215 | zh 4.028 | mean23 1.921 | worst ell 4.70 | gini 0.186
+04:14:57 [0 min] CroissantLLM                       vocab  32,000 | fr 1.163 | zh 0.942 | mean23 2.071 | worst ell 4.47 | gini 0.138
+04:14:59 [0 min] Mistral Tekken                     vocab 131,072 | fr 1.310 | zh 1.396 | mean23 1.605 | worst mlt 2.23 | gini 0.102
+04:15:01 [0 min] BSC Salamandra                     vocab 256,000 | fr 1.309 | zh 3.858 | mean23 1.176 | worst mlt 1.35 | gini 0.051
+04:15:02 [0 min] OpenAI o200k                       vocab 200,019 | fr 1.357 | zh 1.259 | mean23 1.570 | worst ell 2.14 | gini 0.094
+04:15:04 [1 min] Baracoda FR v1.2 (French only)     vocab 131,072 | fr 1.198 | zh 3.025 | mean23 2.224 | worst ell 5.03 | gini 0.166
+04:15:04 [1 min] TERMINÉ
