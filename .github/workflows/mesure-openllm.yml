@@ -23,13 +23,13 @@ jobs:
         env:
           OUT_DIR: ${{ github.workspace }}/results/openllm
           HF_CACHE: ${{ runner.temp }}/hf
-        run: python -u scripts/openllm/openllm_fr.py 2>&1 | grep -vE "Warning|warn\(" | tee openllm_run.log
+        run: python -u scripts/openllm/mistral_large4.py 2>&1 | grep -vE "Warning|warn\(" | tee openllm_run.log
       - name: Save results to the branch
         if: always()
         run: |
-          mkdir -p results/openllm && cp openllm_run.log results/openllm/run.log
+          mkdir -p results/openllm && cp openllm_run.log results/openllm/run_mistral_large4.log
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           git add results/openllm
-          git commit -m "OpenLLM-France tokenizer measurement: results" || echo "nothing to commit"
+          git commit -m "Mistral Large 4 tokenizer measurement: results" || echo "nothing to commit"
           git push
