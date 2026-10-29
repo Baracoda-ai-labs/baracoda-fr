@@ -1,0 +1,33 @@
+17:48:17 OK Mistral Large 4 {'repo': 'mistralai/Mistral-Large-4-1T-A52B', 'vocab': 204800, 'sha256_16': '23a444357919e983', 'vocab_hash': '93b9baa7104c'}
+17:48:19 OK Mistral Large 3 {'repo': 'mistralai/Mistral-Large-3-675B-Instruct-2512', 'vocab': 131072, 'sha256_16': '577575622324b2e0', 'vocab_hash': '66cb775073b6'}
+17:48:20 OK Mistral Medium 3.5 {'repo': 'mistralai/Mistral-Medium-3.5-128B', 'vocab': 131072, 'sha256_16': '2ba5b3330fd84d53', 'vocab_hash': 'd3e50b63947f'}
+17:48:21 OK Mistral Small 4 {'repo': 'mistralai/Mistral-Small-4-119B-2603', 'vocab': 131072, 'sha256_16': '2ba5b3330fd84d53', 'vocab_hash': 'd3e50b63947f'}
+17:48:22 OK Mistral Tekken (Nemo) {'repo': 'mistralai/Mistral-Nemo-Base-2407', 'vocab': 131072, 'sha256_16': 'e11c71726323d33d', 'vocab_hash': 'eb2731e5f534'}
+17:48:22 OK Alibaba Qwen3 {'repo': 'Qwen/Qwen3-0.6B-Base', 'vocab': 151665, 'sha256_16': 'c0382117ea329cdf', 'vocab_hash': 'f6731fd8c1a1'}
+17:48:23 OK DeepSeek V3 {'repo': 'deepseek-ai/DeepSeek-V3', 'vocab': 128815, 'sha256_16': '621ac2e32d0dba65', 'vocab_hash': '16ebf89445ac'}
+17:48:25 OK BSC Salamandra {'repo': 'BSC-LT/salamandra-7b', 'vocab': 256000, 'sha256_16': '2e90b85b3e3b3ebf', 'vocab_hash': 'e782fa0c489c'}
+17:48:27 Mistral Large 4          vocab 204800 EN 54,188 | de 1.239 fr 1.299 zh 1.239 | mean23 1.585 worst ell 2.31 | total23 1,975,324
+17:48:28 Mistral Large 3          vocab 131072 EN 53,975 | de 1.293 fr 1.310 zh 1.396 | mean23 1.605 worst mlt 2.23 | total23 1,992,630
+17:48:29 Mistral Medium 3.5       vocab 131072 EN 53,975 | de 1.293 fr 1.310 zh 1.396 | mean23 1.605 worst mlt 2.23 | total23 1,992,630
+17:48:30 Mistral Small 4          vocab 131072 EN 53,975 | de 1.293 fr 1.310 zh 1.396 | mean23 1.605 worst mlt 2.23 | total23 1,992,630
+17:48:31 Mistral Tekken (Nemo)    vocab 131072 EN 53,975 | de 1.293 fr 1.310 zh 1.396 | mean23 1.605 worst mlt 2.23 | total23 1,992,630
+17:48:33 Alibaba Qwen3            vocab 151665 EN 53,052 | de 1.542 fr 1.559 zh 1.025 | mean23 1.980 worst ell 4.81 | total23 2,415,479
+17:48:34 DeepSeek V3              vocab 128815 EN 52,498 | de 1.500 fr 1.548 zh 0.952 | mean23 1.817 worst ell 2.62 | total23 2,193,453
+17:48:35 BSC Salamandra           vocab 256000 EN 57,514 | de 1.173 fr 1.309 zh 3.858 | mean23 1.176 worst mlt 1.35 | total23 1,556,121
+17:48:37 OpenAI o200k             vocab 200019 EN 51,860 | de 1.303 fr 1.357 zh 1.259 | mean23 1.570 worst ell 2.14 | total23 1,873,043
+# Mistral Large 4 tokenizer vs earlier tokenizers - NTREX-128
+
+Run 2026-10-29 17:48.
+
+| Tokenizer | Vocab | English tokens | German / EN | French / EN | Chinese / EN | Mean, 23 EU languages | Worst | Total, 23 languages |
+|---|---:|---:|---:|---:|---:|---:|---|---:|
+| Mistral Large 4 | 204800 | 54,188 | 1.239 | 1.299 | 1.239 | 1.585 | ell 2.31 | 1,975,324 |
+| Mistral Large 3 | 131072 | 53,975 | 1.293 | 1.310 | 1.396 | 1.605 | mlt 2.23 | 1,992,630 |
+| Mistral Medium 3.5 | 131072 | 53,975 | 1.293 | 1.310 | 1.396 | 1.605 | mlt 2.23 | 1,992,630 |
+| Mistral Small 4 | 131072 | 53,975 | 1.293 | 1.310 | 1.396 | 1.605 | mlt 2.23 | 1,992,630 |
+| Mistral Tekken (Nemo) | 131072 | 53,975 | 1.293 | 1.310 | 1.396 | 1.605 | mlt 2.23 | 1,992,630 |
+| Alibaba Qwen3 | 151665 | 53,052 | 1.542 | 1.559 | 1.025 | 1.980 | ell 4.81 | 2,415,479 |
+| DeepSeek V3 | 128815 | 52,498 | 1.500 | 1.548 | 0.952 | 1.817 | ell 2.62 | 2,193,453 |
+| BSC Salamandra | 256000 | 57,514 | 1.173 | 1.309 | 3.858 | 1.176 | mlt 1.35 | 1,556,121 |
+| OpenAI o200k | 200019 | 51,860 | 1.303 | 1.357 | 1.259 | 1.570 | ell 2.14 | 1,873,043 |
+17:48:37 TERMINÉ
