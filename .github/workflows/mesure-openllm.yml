@@ -23,7 +23,7 @@ jobs:
         env:
           OUT_DIR: ${{ github.workspace }}/results/openllm
           HF_CACHE: ${{ runner.temp }}/hf
-        run: python -u scripts/openllm/mistral_large4.py 2>&1 | grep -vE "Warning|warn\(" | tee openllm_run.log
+        run: python -u scripts/openllm/mistral_large4_full.py 2>&1 | grep -vE "Warning|warn\(" | tee openllm_run.log
       - name: Save results to the branch
         if: always()
         run: |
