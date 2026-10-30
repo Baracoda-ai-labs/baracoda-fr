@@ -1,5 +1,65 @@
-Traceback (most recent call last):
-  File "/home/runner/work/baracoda-fr/baracoda-fr/scripts/openllm/mistral_large4_full.py", line 30, in <module>
-    ctrl = json.load(open(os.path.join(HERE, "data", "ntrex_control.json")))
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/baracoda-fr/baracoda-fr/scripts/openllm/data/ntrex_control.json'
+10:47:50 NTREX languages read: 128
+10:47:56 Mistral Large 4: fr 1.299 rank 13/124 median 1.639 zh 1.239 max (2.9112349597696907, 'mya')
+10:48:02 CONTROL Mistral Tekken (Nemo): max |diff| vs archived = 0.0000
+10:48:02 Mistral Tekken (Nemo): fr 1.310 rank 9/124 median 1.866 zh 1.396 max (14.318221398795739, 'khm')
+10:48:08 CONTROL OpenAI o200k: max |diff| vs archived = 0.0000
+10:48:08 OpenAI o200k: fr 1.357 rank 16/124 median 1.688 zh 1.259 max (10.950192826841496, 'div')
+10:48:09 sw n=446 L4 1.598 | Tekken 1.809 (archived 1.809) | o200k 1.477 (archived 1.477)
+10:48:09 ha n=476 L4 1.760 | Tekken 1.892 (archived 1.892) | o200k 1.544 (archived 1.544)
+10:48:09 yo n=487 L4 2.424 | Tekken 2.782 (archived 2.782) | o200k 2.148 (archived 2.148)
+10:48:10 ig n=500 L4 2.185 | Tekken 2.394 (archived 2.394) | o200k 1.665 (archived 1.665)
+10:48:10 wo n=352 L4 1.733 | Tekken 1.883 (archived 1.883) | o200k 1.746 (archived 1.746)
+10:48:10 ff n=472 L4 1.666 | Tekken 1.726 (archived 1.726) | o200k 1.596 (archived 1.596)
+10:48:11 ln n=414 L4 1.715 | Tekken 1.775 (archived 1.775) | o200k 1.600 (archived 1.600)
+10:48:11 am n=420 L4 2.053 | Tekken 7.375 (archived 7.375) | o200k 5.739 (archived 5.739)
+10:48:11 so n=499 L4 1.972 | Tekken 2.152 (archived 2.152) | o200k 1.726 (archived 1.726)
+10:48:11 om n=52 L4 2.059 | Tekken 2.167 (archived 2.167) | o200k 1.827 (archived 1.827)
+10:48:12 zu n=492 L4 2.049 | Tekken 2.100 (archived 2.100) | o200k 1.716 (archived 1.716)
+10:48:12 xh n=500 L4 1.898 | Tekken 1.960 (archived 1.960) | o200k 1.620 (archived 1.620)
+10:48:12 sn n=498 L4 1.914 | Tekken 1.982 (archived 1.982) | o200k 1.696 (archived 1.696)
+10:48:12 lg n=482 L4 1.795 | Tekken 1.850 (archived 1.850) | o200k 1.648 (archived 1.648)
+10:48:12 ny n=479 L4 1.857 | Tekken 1.967 (archived 1.967) | o200k 1.602 (archived 1.602)
+10:48:13 nso n=488 L4 1.991 | Tekken 2.051 (archived 2.051) | o200k 1.854 (archived 1.854)
+10:48:13 luo n=272 L4 1.679 | Tekken 1.745 (archived 1.745) | o200k 1.655 (archived 1.655)
+10:48:13 kam n=491 L4 1.815 | Tekken 1.905 (archived 1.905) | o200k 1.794 (archived 1.794)
+10:48:14 umb n=355 L4 1.816 | Tekken 1.882 (archived 1.882) | o200k 1.745 (archived 1.745)
+10:48:14 ar n=427 L4 1.284 | Tekken 1.233 (archived 1.233) | o200k 1.373 (archived 1.373)
+10:48:14 hi n=391 L4 1.589 | Tekken 1.794 (archived 1.794) | o200k 1.563 (archived 1.563)
+10:48:14 bn n=499 L4 1.543 | Tekken 2.039 (archived 2.039) | o200k 1.701 (archived 1.701)
+10:48:14 ta n=486 L4 1.700 | Tekken 2.164 (archived 2.164) | o200k 1.968 (archived 1.968)
+10:48:15 km n=480 L4 2.864 | Tekken 14.593 (archived 14.593) | o200k 3.291 (archived 3.291)
+10:48:15 lo n=380 L4 2.721 | Tekken 12.620 (archived 12.620) | o200k 8.213 (archived 8.213)
+10:48:15 my n=496 L4 2.791 | Tekken 3.199 (archived 3.199) | o200k 3.149 (archived 3.149)
+10:48:15 SUMMARY {
+ "Mistral Large 4": {
+  "latin_african_median": 1.8365846129671017,
+  "latin_african_range": [
+   1.598330550918197,
+   2.424071991001125
+  ],
+  "amharic": 2.053171724320977,
+  "asian_max": 2.8641721803939464,
+  "arabic_eg": 1.2841902763203918
+ },
+ "Mistral Tekken (Nemo)": {
+  "latin_african_median": 1.9324326174022626,
+  "latin_african_range": [
+   1.7264229804696405,
+   2.781666916504272
+  ],
+  "amharic": 7.3750994079703105,
+  "asian_max": 14.592550361079438,
+  "arabic_eg": 1.2330360265827212
+ },
+ "OpenAI o200k": {
+  "latin_african_median": 1.6806190877189735,
+  "latin_african_range": [
+   1.4770705587701873,
+   2.148452648724114
+  ],
+  "amharic": 5.7390826695962645,
+  "asian_max": 8.213229335494328,
+  "arabic_eg": 1.3732031461893137
+ }
+}
+10:48:15 TERMINÉ
